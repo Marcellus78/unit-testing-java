@@ -1,10 +1,12 @@
 package com.marcellus.testing;
 
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.assumingThat;
 
 public class AccountTest {
 
@@ -56,4 +58,19 @@ public class AccountTest {
         assertThat(address1,notNullValue());
 
     }
+    @RepeatedTest(5)
+    void newAccountWithNotNullAddressShouldBeActive(){
+
+        //given
+        Address address = new Address("Puławsk","46/6");
+
+        //when
+        Account account = new Account(address);
+
+        //then
+        assumingThat(address != null, ()->{
+            assertTrue(account.isActive());
+        });
+    }
+
 }

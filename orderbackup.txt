@@ -1,1 +1,1 @@
-New order: Order{meals=[Meal{price=7, name='Fries'}]} backe up.
+New order: Order{meals=[Meal{price=7, name='Fries'}]} backed up.
