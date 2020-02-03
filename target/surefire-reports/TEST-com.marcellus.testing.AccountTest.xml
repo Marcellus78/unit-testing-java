@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.marcellus.testing.AccountTest" time="0.037" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.marcellus.testing.AccountTest" time="0.103" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1250"/>
-    <property name="java.class.path" value="C:\Users\Marcellus\IdeaProjects\unit-testing-java\target\test-classes;C:\Users\Marcellus\IdeaProjects\unit-testing-java\target\classes;C:\Users\Marcellus\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Marcellus\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Marcellus\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\platform\junit-platform-launcher\1.6.0\junit-platform-launcher-1.6.0.jar;"/>
+    <property name="java.class.path" value="D:\SpringProjects\unit-testing-java\target\test-classes;D:\SpringProjects\unit-testing-java\target\classes;C:\Users\Marcellus\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Marcellus\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Marcellus\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\platform\junit-platform-launcher\1.6.0\junit-platform-launcher-1.6.0.jar;C:\Users\Marcellus\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Marcellus\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -17,10 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PL"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.6\bin"/>
-    <property name="sun.java.command" value="C:\Users\MARCEL~1\AppData\Local\Temp\surefire15736416607978452948\surefirebooter16615340569145924884.jar C:\Users\Marcellus\AppData\Local\Temp\surefire15736416607978452948 2020-02-02T00-21-46_048-jvmRun1 surefire2439407270234214850tmp surefire_013370499015965548306tmp"/>
+    <property name="sun.java.command" value="C:\Users\MARCEL~1\AppData\Local\Temp\surefire12664485836223091244\surefirebooter1483788414996576446.jar C:\Users\Marcellus\AppData\Local\Temp\surefire12664485836223091244 2020-02-03T20-11-42_599-jvmRun1 surefire254673521104691326tmp surefire_02755535305286890289tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="AccountTest#myTest"/>
-    <property name="surefire.test.class.path" value="C:\Users\Marcellus\IdeaProjects\unit-testing-java\target\test-classes;C:\Users\Marcellus\IdeaProjects\unit-testing-java\target\classes;C:\Users\Marcellus\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Marcellus\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Marcellus\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\platform\junit-platform-launcher\1.6.0\junit-platform-launcher-1.6.0.jar;"/>
+    <property name="surefire.test.class.path" value="D:\SpringProjects\unit-testing-java\target\test-classes;D:\SpringProjects\unit-testing-java\target\classes;C:\Users\Marcellus\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Marcellus\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Marcellus\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\Marcellus\.m2\repository\org\junit\platform\junit-platform-launcher\1.6.0\junit-platform-launcher-1.6.0.jar;C:\Users\Marcellus\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Marcellus\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Marcellus"/>
     <property name="user.language" value="pl"/>
@@ -28,13 +27,13 @@
     <property name="java.version.date" value="2020-01-14"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.6"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\Marcellus\IdeaProjects\unit-testing-java"/>
+    <property name="basedir" value="D:\SpringProjects\unit-testing-java"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\MARCEL~1\AppData\Local\Temp\surefire15736416607978452948\surefirebooter16615340569145924884.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\MARCEL~1\AppData\Local\Temp\surefire12664485836223091244\surefirebooter1483788414996576446.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.6+8-LTS"/>
@@ -49,17 +48,28 @@
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\MARCEL~1\AppData\Local\Temp\"/>
     <property name="java.version" value="11.0.6"/>
-    <property name="user.dir" value="C:\Users\Marcellus\IdeaProjects\unit-testing-java"/>
+    <property name="user.dir" value="D:\SpringProjects\unit-testing-java"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.6\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Git\cmd;C:\Tools\apache-maven-3.6.2\bin;C:\Program Files\Java\jdk-11.0.6\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Gradle\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\Docker Toolbox;."/>
+    <property name="idea.version2019.3.2" value="true"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vm.version" value="11.0.6+8-LTS"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="myTest" classname="com.marcellus.testing.AccountTest" time="0.028"/>
+  <testcase name="invalidEmailShouldThrowException" classname="com.marcellus.testing.AccountTest" time="0.043"/>
+  <testcase name="accountShouldBeActiveAfterActivation" classname="com.marcellus.testing.AccountTest" time="0.01"/>
+  <testcase name="newlyCreatedAccountShouldNotHaveDeliveryAddressSet" classname="com.marcellus.testing.AccountTest" time="0.002"/>
+  <testcase name="emailCorrectEmailShouldBeAdded" classname="com.marcellus.testing.AccountTest" time="0.002"/>
+  <testcase name="defaultDeliveryAddressShouldNotBeNullAfterBeingSet" classname="com.marcellus.testing.AccountTest" time="0.003"/>
+  <testcase name="newAccountWithNotNullAddressShouldBeActive[1]" classname="com.marcellus.testing.AccountTest" time="0.004"/>
+  <testcase name="newAccountWithNotNullAddressShouldBeActive[2]" classname="com.marcellus.testing.AccountTest" time="0"/>
+  <testcase name="newAccountWithNotNullAddressShouldBeActive[3]" classname="com.marcellus.testing.AccountTest" time="0.001"/>
+  <testcase name="newAccountWithNotNullAddressShouldBeActive[4]" classname="com.marcellus.testing.AccountTest" time="0.001"/>
+  <testcase name="newAccountWithNotNullAddressShouldBeActive[5]" classname="com.marcellus.testing.AccountTest" time="0"/>
+  <testcase name="newAccountShouldNotBeActive" classname="com.marcellus.testing.AccountTest" time="0.002"/>
 </testsuite>

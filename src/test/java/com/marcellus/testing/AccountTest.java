@@ -72,5 +72,25 @@ public class AccountTest {
             assertTrue(account.isActive());
         });
     }
+    @Test
+    void invalidEmailShouldThrowException(){
+        //given
+        Account account = new Account();
+
+        //when
+        //then
+        assertThrows(IllegalArgumentException.class,()->account.setEmail("wrongEmail"));
+    }
+    @Test
+    void emailCorrectEmailShouldBeAdded(){
+        //given
+        Account account = new Account();
+
+        //when
+        account.setEmail("moniuszko@gmail.com");
+
+        //then
+        assertThat(account.getEmail(), is("moniuszko@gmail.com"));
+    }
 
 }

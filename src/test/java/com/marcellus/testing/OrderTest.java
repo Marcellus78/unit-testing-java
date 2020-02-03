@@ -3,6 +3,7 @@ package com.marcellus.testing;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.util.Arrays;
 import java.util.List;
@@ -10,7 +11,9 @@ import java.util.List;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
+@ExtendWith(BeforeAfterExtension.class)
 public class OrderTest {
 
     private Order order;
@@ -116,4 +119,42 @@ public class OrderTest {
         assertThat(meals1, is(meals2));
     }
 
+    @Test
+    void orderTotalPriceShouldNotExceedsMaxIntValue(){
+        //given
+        Meal meal = new Meal(Integer.MAX_VALUE,"Pizza");
+        Meal meal2 = new Meal(Integer.MAX_VALUE,"Sandwich");
+
+        //when
+        order.addMealToOrder(meal);
+        order.addMealToOrder(meal2);
+
+        //then
+        assertThrows(IllegalStateException.class, ()->order.totalPrice());
+    }
+
+    @Test
+    void emptyOrderTotalPriceShouldBeZero(){
+
+        //given
+        //Order created in method beforeEach
+
+        //then
+        assertThat(order.totalPrice(), is(0));
+    }
+    @Test
+    void cancelingOrderShouldRemoveAllItemsFromTheList(){
+        //given
+        Meal meal = new Meal(Integer.MAX_VALUE,"Pizza");
+        Meal meal2 = new Meal(Integer.MAX_VALUE,"Sandwich");
+
+        //when
+        order.addMealToOrder(meal);
+        order.addMealToOrder(meal2);
+
+        order.cancel();
+
+        //then
+        assertThat(order.getMeals().size(), is(0));
+    }
 }

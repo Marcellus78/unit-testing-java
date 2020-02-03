@@ -1,1 +1,9 @@
+com\marcellus\testing\Cart.class
+com\marcellus\testing\IAExceptionIgnoreExtension.class
+com\marcellus\testing\BeforeAfterExtension.class
+com\marcellus\testing\Order.class
+com\marcellus\testing\Meal.class
 com\marcellus\testing\Account.class
+com\marcellus\testing\Address.class
+com\marcellus\testing\OrderStatus.class
+com\marcellus\testing\OrderBackup.class

@@ -1,1 +1,8 @@
+com\marcellus\testing\OrderBackupTest.class
+com\marcellus\testing\OrderBackupExecutionOrderTest.class
+com\marcellus\testing\CartTest.class
+com\marcellus\testing\OrderTest.class
 com\marcellus\testing\AccountTest.class
+com\marcellus\testing\OrderStatusTest.class
+com\marcellus\testing\MealTest.class
+com\marcellus\testing\AddressTest.class
