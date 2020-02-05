@@ -1,5 +1,8 @@
-package com.marcellus.testing;
+package com.marcellus.testing.order;
 
+import com.marcellus.testing.Meal;
+import com.marcellus.testing.order.Order;
+import com.marcellus.testing.order.OrderBackup;
 import org.junit.jupiter.api.*;
 
 import java.io.FileNotFoundException;
@@ -33,7 +36,7 @@ public class OrderBackupTest {
 
         //given
         Meal meal = new Meal(7,"Fries");
-        Order order = new Order();
+        com.marcellus.testing.order.Order order = new Order();
         order.addMealToOrder(meal);
 
         //when

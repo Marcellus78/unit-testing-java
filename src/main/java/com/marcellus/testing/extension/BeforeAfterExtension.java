@@ -1,4 +1,4 @@
-package com.marcellus.testing;
+package com.marcellus.testing.extension;
 
 import org.junit.jupiter.api.extension.AfterEachCallback;
 import org.junit.jupiter.api.extension.BeforeEachCallback;

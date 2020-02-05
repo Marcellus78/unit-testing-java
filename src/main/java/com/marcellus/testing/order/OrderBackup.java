@@ -1,4 +1,6 @@
-package com.marcellus.testing;
+package com.marcellus.testing.order;
+
+import com.marcellus.testing.order.Order;
 
 import java.io.*;
 

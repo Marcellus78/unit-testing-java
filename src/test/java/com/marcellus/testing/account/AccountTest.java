@@ -1,5 +1,7 @@
-package com.marcellus.testing;
+package com.marcellus.testing.account;
 
+import com.marcellus.testing.account.Account;
+import com.marcellus.testing.account.Address;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 

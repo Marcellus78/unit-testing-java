@@ -1,5 +1,9 @@
-package com.marcellus.testing;
+package com.marcellus.testing.order;
 
+import com.marcellus.testing.Meal;
+import com.marcellus.testing.extension.BeforeAfterExtension;
+import com.marcellus.testing.order.Order;
+import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -51,7 +55,7 @@ public class OrderTest {
         assertThat(order.getMeals(),empty());
         assertThat(order.getMeals().size(),equalTo(0));
         assertThat(order.getMeals(),hasSize(0));
-        assertThat(order.getMeals(),emptyCollectionOf(Meal.class));
+        MatcherAssert.assertThat(order.getMeals(),emptyCollectionOf(Meal.class));
     }
 
     @Test

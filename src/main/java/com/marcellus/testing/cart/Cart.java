@@ -1,4 +1,7 @@
-package com.marcellus.testing;
+package com.marcellus.testing.cart;
+
+import com.marcellus.testing.Meal;
+import com.marcellus.testing.order.Order;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,10 +1,12 @@
-package com.marcellus.testing;
+package com.marcellus.testing.cart;
 
+import com.marcellus.testing.Meal;
+import com.marcellus.testing.cart.Cart;
+import com.marcellus.testing.order.Order;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import javax.print.attribute.standard.OrientationRequested;
 import java.time.Duration;
 import java.util.List;
 

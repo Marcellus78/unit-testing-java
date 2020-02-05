@@ -1,4 +1,4 @@
-package com.marcellus.testing;
+package com.marcellus.testing.account;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;

@@ -1,4 +1,4 @@
-package com.marcellus.testing;
+package com.marcellus.testing.account;
 
 public class Address {
 
