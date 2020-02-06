@@ -1,6 +1,6 @@
 package com.marcellus.testing.cart;
 
-import com.marcellus.testing.Meal;
+import com.marcellus.testing.meal.Meal;
 import com.marcellus.testing.order.Order;
 
 import java.util.ArrayList;

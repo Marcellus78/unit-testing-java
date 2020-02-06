@@ -1,6 +1,7 @@
-package com.marcellus.testing;
+package com.marcellus.testing.meal;
 
 import com.marcellus.testing.extension.IAExceptionIgnoreExtension;
+import com.marcellus.testing.meal.Meal;
 import com.marcellus.testing.order.Order;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Tag;

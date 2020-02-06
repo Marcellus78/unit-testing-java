@@ -1,8 +1,7 @@
 package com.marcellus.testing.order;
 
-import com.marcellus.testing.Meal;
+import com.marcellus.testing.meal.Meal;
 import com.marcellus.testing.extension.BeforeAfterExtension;
-import com.marcellus.testing.order.Order;
 import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

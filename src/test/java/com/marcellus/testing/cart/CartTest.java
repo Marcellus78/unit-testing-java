@@ -1,7 +1,6 @@
 package com.marcellus.testing.cart;
 
-import com.marcellus.testing.Meal;
-import com.marcellus.testing.cart.Cart;
+import com.marcellus.testing.meal.Meal;
 import com.marcellus.testing.order.Order;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;

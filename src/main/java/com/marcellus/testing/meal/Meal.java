@@ -1,4 +1,4 @@
-package com.marcellus.testing;
+package com.marcellus.testing.meal;
 
 import java.util.Objects;
 
@@ -64,5 +64,9 @@ public class Meal {
                 "price=" + price +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public String getName() {
+        return this.name;
     }
 }

@@ -1,8 +1,6 @@
 package com.marcellus.testing.order;
 
-import com.marcellus.testing.Meal;
-import com.marcellus.testing.order.Order;
-import com.marcellus.testing.order.OrderBackup;
+import com.marcellus.testing.meal.Meal;
 import org.junit.jupiter.api.*;
 
 import java.io.FileNotFoundException;
