@@ -8,6 +8,9 @@ public class Meal {
     private String name;
     private int quantity;
 
+    public Meal() {
+    }
+
     public Meal(int price) {
         this.price = price;
     }
@@ -47,7 +50,9 @@ public class Meal {
         return price == meal.price &&
                 Objects.equals(name, meal.name);
     }
-
+    public int sumPrice(){
+        return getPrice() * getQuantity();
+    }
     @Override
     public int hashCode() {
         return Objects.hash(price, name);

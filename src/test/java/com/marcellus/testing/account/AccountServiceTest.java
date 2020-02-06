@@ -1,17 +1,21 @@
 package com.marcellus.testing.account;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.junit.jupiter.MockitoSettings;
+import org.mockito.quality.Strictness;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.*;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+@MockitoSettings(strictness = Strictness.STRICT_STUBS)
 public class AccountServiceTest  {
     @Test
     void getAllActiveAccounts() {
@@ -44,6 +48,22 @@ public class AccountServiceTest  {
 
         //then
         assertThat(accountList, hasSize(0));
+    }
+    @Test
+    void getAccountsByName() {
+
+        //given
+        List<Account> accounts = loadData();
+        AccountRepository accountRepository = mock(AccountRepository.class);
+        AccountService accountService = new AccountService(accountRepository);
+        //when(accountRepository.getAllAccounts()).thenReturn(accounts);
+        given(accountRepository.getByNames("Maciek")).willReturn(Collections.singletonList("Moniuszko"));
+
+        //when
+        List<String> accountNames = accountService.findByName("Maciek");
+
+        //then
+        assertThat(accountNames, contains("Moniuszko"));
     }
 
     private List<Account> loadData(){
